@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <script src="scripts/values.js" defer></script>
+    <script src="scripts/DirectMapping.js" defer></script>
+    <script src="scripts/AsssociativeMapping.js" defer></script>
+    <script src="scripts/SetAssociativeMapping.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <title>Cache Memory Simulator</title>
+</head>
+<body>
+    <div id="frame">
+        <div id="inputField">
+            <label>Cache Size: <input type="number" id="cacheSize" name="cacheSize"></label><br>
+            <label>Block Size: <input type="number" name="blockSize" id="blockSize"></label><br>
+            <label>Mapping Technique:</label>
+            <select name="mappingTechnique" id="dropdown">
+                <option value="Direct Mapping">Direct Mapping</option>
+                <option value="Associative Mapping">Associative Mapping</option>
+                <option value="Set-Associative Mapping">Set-Associative Mapping</option>
+            </select>
+            <br>
+
+            <div id="setBox" style="display: none;">
+                <label>Set: <input type="number" name="set" id="setInput"></label>
+            </div>
+            
+            <label>Memory address sequence:  <input type="text" name="memoryAddress" id="memoryAddress"></label><br>
+            <button id="simulate" onclick="runSimulation()">Simulate</button>
+        </div>
+        
+
+        <h3>Memory Address Result</h3>
+        <table id="memoryAddressResult"></table>
+
+        <div id="output">
+            <div id="cacheHits"></div>
+            <div id="cacheMisses"></div>
+            <div id="hitRate"></div>
+            <div id="missRate"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
