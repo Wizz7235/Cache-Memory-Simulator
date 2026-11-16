@@ -20,8 +20,8 @@ function calculateResult(hit, miss){
     let hitRate = (hit / totalAccess) * 100;
     let missRate = (miss / totalAccess) * 100;
 
-    document.getElementById("cacheHits").innerHTML = "Cache Hits: " + hit;
-    document.getElementById("cacheMisses").innerHTML = "Cache Misses: " + miss;
-    document.getElementById("hitRate").innerHTML = "Hit Rate: " + hitRate.toFixed(2) + "%";
-    document.getElementById("missRate").innerHTML = "Miss Rate: " + missRate.toFixed(2) + "%";
+    document.getElementById("cacheHits").innerHTML = hit;
+    document.getElementById("cacheMisses").innerHTML = miss;
+    document.getElementById("hitRate").innerHTML = hitRate.toFixed(2) + "%";
+    document.getElementById("missRate").innerHTML = missRate.toFixed(2) + "%";
 }
