@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="style.css">
     <script src="scripts/values.js" defer></script>
     <script src="scripts/DirectMapping.js" defer></script>
     <script src="scripts/AsssociativeMapping.js" defer></script>
@@ -41,35 +41,36 @@
         </div>
         
         <div id="output">
-            <h3>Memory Address Result</h3>
+            <h4>Memory Address Result</h4>
             <div id="tableContainer">
-                <thead>
-                    <tr>
-                        <th>Address</th>
-                        <th>Status</th>
-                    </tr>
-                    
-                </thead>
-                 <tbody id="memoryAddressResult">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Address</th>
+                            <th>Status</th>
+                        </tr>   
+                    </thead>
+                    <tbody id="memoryAddressResult">
 
-                 </tbody>
+                    </tbody>
+                 </table>
             </div>
            
         <div id="result">
             <div>Cache Hits:
-                <p id="cacheHits"></p>
+                <p id="cacheHits">0</p>
             </div>
 
             <div>Cache Miss:
-                <p id="cacheMisses"></p>
+                <p id="cacheMisses">0</p>
             </div>
 
             <div>Hit Rate:
-                <p id="hitRate"></p>    
+                <p id="hitRate">0</p>    
             </div>
 
             <div>Miss Rate: 
-                <p id="missRate"></p>
+                <p id="missRate">0</p>
             </div>
         </div>
 
